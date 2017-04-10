@@ -1,0 +1,15 @@
+wcs_coav_homepage:
+    path:     /
+    defaults: { _controller: WCSCoavBundle:Default:index }
+wcs_coav_planemodel:
+    path:   /planemodel
+    defaults: { _controller: WCSCoavBundle:PlaneModel:index }
+wcs_coav_flight:
+    path:   /flight
+    defaults: { _controller: WCSCoavBundle:Flight:index }
+wcs_coav_reservation:
+    path:   /reservation
+    defaults: { _controller: WCSCoavBundle:Reservation:index }
+wcs_coav_terrain:
+    path:   /terrain
+    defaults: { _controller: WCSCoavBundle:Terrain:index }
