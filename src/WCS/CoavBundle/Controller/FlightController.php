@@ -40,7 +40,7 @@ class FlightController extends Controller
         if ($form->isSubmitted() && $form->isValid()) {
             $em = $this->getDoctrine()->getManager();
             $em->persist($flight);
-            $em->flush();
+            $em->flush($flight);
 
             return $this->redirectToRoute('flight_show', array('id' => $flight->getId()));
         }
